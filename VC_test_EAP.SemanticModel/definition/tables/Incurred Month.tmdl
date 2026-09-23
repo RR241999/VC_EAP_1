@@ -195,19 +195,27 @@ table 'Incurred Month'
 
 	column 'Incurred Month Begin Dt'
 		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
 		lineageTag: 97dfb8e5-41ab-4869-a659-946c58bfbe45
 		summarizeBy: none
 		sourceColumn: Incurred_Month_Begin_Dt
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column 'Incurred Month EndDt'
 		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
 		lineageTag: a3391695-f124-4de0-9964-dfaf72b9657b
 		summarizeBy: none
 		sourceColumn: Incurred_Month_EndDt
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column DefaultYearMonth
 		dataType: string

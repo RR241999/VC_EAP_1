@@ -3,15 +3,19 @@ table DIM_EAP_PROD_DESC
 
 	column Key_Factor_Timestamp
 		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
 		lineageTag: 6c25df16-b079-4264-b677-d5fdf85433ee
 		summarizeBy: none
 		sourceColumn: Key_Factor_Timestamp
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column 'Health and Well Being Key'
-		dataType: int64
-		formatString: 0
+		dataType: string
+		sourceProviderType: varchar(8000)
 		lineageTag: ad987a14-9310-4e70-abd7-2901841aa4cc
 		summarizeBy: none
 		sourceColumn: Health_and_Well_Being_Key

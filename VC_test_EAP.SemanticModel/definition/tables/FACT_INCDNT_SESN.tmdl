@@ -2,7 +2,8 @@ table FACT_INCDNT_SESN
 	lineageTag: fea441ac-e210-49d8-ab1c-552c9d067253
 
 	column SNAP_YEAR_MNTH_NBR
-		dataType: double
+		dataType: int64
+		formatString: 0
 		lineageTag: d361aaf6-af6b-48c1-9efb-af3991b083a2
 		summarizeBy: sum
 		sourceColumn: SNAP_YEAR_MNTH_NBR
@@ -18,14 +19,17 @@ table FACT_INCDNT_SESN
 		annotation SummarizationSetBy = Automatic
 
 	column RPTG_MNTH_NBR
-		dataType: double
+		dataType: int64
+		formatString: 0
 		lineageTag: 4cf02aa0-d014-47b2-a456-865dd27e9ef9
+		summarizeBy: none
 		sourceColumn: RPTG_MNTH_NBR
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'Session Created Year Month'
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 9391fa85-7ba2-4674-872f-99a8b282d7b6
 		summarizeBy: sum
 		sourceColumn: EAP_SESN_MNTH_NBR
@@ -49,7 +53,8 @@ table FACT_INCDNT_SESN
 		annotation SummarizationSetBy = Automatic
 
 	column EDM_CLNT_GRP_SUBGRP_ACCT_KEY
-		dataType: double
+		dataType: int64
+		formatString: 0
 		lineageTag: f66ed4b6-1d33-493b-bbe3-c1c32d5d2191
 		summarizeBy: none
 		sourceColumn: EDM_CLNT_GRP_SUBGRP_ACCT_KEY
@@ -72,7 +77,8 @@ table FACT_INCDNT_SESN
 		annotation SummarizationSetBy = Automatic
 
 	column INCDNT_PRSNT_PRBLM_KEY
-		dataType: double
+		dataType: int64
+		formatString: 0
 		lineageTag: 5cf0a175-2b97-4bbd-abbe-5a3f129a437b
 		summarizeBy: none
 		sourceColumn: INCDNT_PRSNT_PRBLM_KEY
@@ -112,7 +118,8 @@ table FACT_INCDNT_SESN
 		annotation SummarizationSetBy = Automatic
 
 	column INCDNT_ACTY_KEY
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 48a73a03-f26d-440b-bd99-ed845a995682
 		summarizeBy: none
 		sourceColumn: INCDNT_ACTY_KEY

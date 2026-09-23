@@ -131,6 +131,18 @@ table DIM_EAP_SRVY_DFD
 		lineageTag: 925517db-211b-4e8e-aded-d6d47ba88fb7
 		sourceColumn: MBR_INCDNT_KEY
 
+	column KF_TMS
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: 27c920df-c17f-4850-9c71-179ff53b550d
+		summarizeBy: none
+		sourceColumn: KF_TMS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
 	partition 'New M Partition' = m
 		mode: dual
 		source =

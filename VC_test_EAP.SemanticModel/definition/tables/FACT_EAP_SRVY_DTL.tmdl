@@ -5062,19 +5062,25 @@ table FACT_EAP_SRVY_DTL
 
 	column 'Created Date Time'
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: bacfeb1a-117f-4dd8-a99a-fbdd7ec98fee
 		summarizeBy: none
 		sourceColumn: CREATD_DTM
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column 'Last Modified Date Time'
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: cb7d1da7-6ece-4d31-829e-7f2ba95824cd
 		summarizeBy: none
 		sourceColumn: LAST_MDFD_DTM
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column 'EAP Member Reference Number'
 		dataType: string
@@ -5102,27 +5108,36 @@ table FACT_EAP_SRVY_DTL
 
 	column 'Outreach Completed Date'
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: f9bea4e8-f3e3-41e6-a896-ee194726ebef
 		summarizeBy: none
 		sourceColumn: OUTRCH_CMPLTD_DT
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column 'Outreach Sent Date'
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: 788135de-bae7-40c1-961e-4205ef626566
 		summarizeBy: none
 		sourceColumn: OUTRCH_SENT_DT
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column OUTRCH_RMNDR_DT
 		dataType: dateTime
+		formatString: Long Date
 		lineageTag: c25c07ff-4f3d-4f9e-a614-f525ac2dd646
 		summarizeBy: none
 		sourceColumn: OUTRCH_RMNDR_DT
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column 'Incident Number'
 		dataType: string
@@ -5369,10 +5384,13 @@ table FACT_EAP_SRVY_DTL
 		annotation SummarizationSetBy = Automatic
 
 	column SESN_MDL_KEY
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 85623f48-67ab-4b74-8a16-1aca042b1bec
 		summarizeBy: none
 		sourceColumn: SESN_MDL_KEY
+
+		annotation SummarizationSetBy = Automatic
 
 	partition 'New M Partition' = m
 		source =

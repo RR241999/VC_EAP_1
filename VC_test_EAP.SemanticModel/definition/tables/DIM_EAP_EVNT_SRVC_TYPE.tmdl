@@ -42,10 +42,14 @@ table DIM_EAP_EVNT_SRVC_TYPE
 		annotation SummarizationSetBy = Automatic
 
 	column SRVC_TYPE_KEY
-		dataType: string
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
 		lineageTag: 087f9d41-a1da-4624-8f5c-092c5e497924
 		summarizeBy: none
 		sourceColumn: SRVC_TYPE_KEY
+
+		annotation SummarizationSetBy = Automatic
 
 	partition 'New M Partition' = m
 		mode: dual

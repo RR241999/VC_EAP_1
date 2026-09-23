@@ -26,7 +26,9 @@ table DIM_EAP_SESN_MDL
 		annotation SummarizationSetBy = Automatic
 
 	column SESN_MDL_KEY
-		dataType: string
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
 		lineageTag: 91ca32f6-695b-4f5a-88bd-2bd2087a4781
 		summarizeBy: none
 		sourceColumn: SESN_MDL_KEY

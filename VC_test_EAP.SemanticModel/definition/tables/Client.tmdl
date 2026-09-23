@@ -131,35 +131,51 @@ table Client
 
 	column CLNT_GRP_SUBGRP_EFCTV_DT
 		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
 		lineageTag: 0f7be3c5-3e6d-4343-a4de-57fd85638965
 		summarizeBy: none
 		sourceColumn: CLNT_GRP_SUBGRP_EFCTV_DT
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column CLNT_GRP_SUBGRP_TRMNTN_DT
 		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
 		lineageTag: 99272149-4641-4b9d-895c-07a7d06f651f
 		summarizeBy: none
 		sourceColumn: CLNT_GRP_SUBGRP_TRMNTN_DT
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column CLNT_GRP_EFCTV_DT
 		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
 		lineageTag: 5c455660-3da8-4c51-b70c-b50c43e6ca7f
 		summarizeBy: none
 		sourceColumn: CLNT_GRP_EFCTV_DT
 
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column CLNT_GRP_TRMNTN_DT
 		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
 		lineageTag: 113a54d5-9722-4fdd-a391-5ac898540cc2
 		summarizeBy: none
 		sourceColumn: CLNT_GRP_TRMNTN_DT
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	partition 'New M Partition' = m
 		mode: dual
