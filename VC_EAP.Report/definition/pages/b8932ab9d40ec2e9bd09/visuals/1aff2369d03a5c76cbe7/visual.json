@@ -1,0 +1,83 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "1aff2369d03a5c76cbe7",
+  "position": {
+    "x": 856.94626427884884,
+    "y": 178.03828718507975,
+    "z": 0,
+    "height": 300,
+    "width": 300
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_EAP_EVNT_SRVC_TYPE"
+                    }
+                  },
+                  "Property": "EAP Management Service Group Code"
+                }
+              },
+              "queryRef": "DIM_EAP_EVNT_SRVC_TYPE.EAP Management Service Group Code",
+              "nativeQueryRef": "EAP Management Service Group Code"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_EAP_EVNT_SRVC_TYPE"
+                    }
+                  },
+                  "Property": "EAP Management Service Group Description"
+                }
+              },
+              "queryRef": "DIM_EAP_EVNT_SRVC_TYPE.EAP Management Service Group Description",
+              "nativeQueryRef": "EAP Management Service Group Description"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "06a78afee8bdbe3bac70",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_EAP_EVNT_SRVC_TYPE"
+              }
+            },
+            "Property": "EAP Management Service Group Code"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "dc434fe594bc80486756",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DIM_EAP_EVNT_SRVC_TYPE"
+              }
+            },
+            "Property": "EAP Management Service Group Description"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

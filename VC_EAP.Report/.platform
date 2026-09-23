@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "VC_EAP"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e170ed87-1fee-4bc6-84c2-cb869bd70db8"
+  }
+}
